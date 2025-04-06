@@ -1,0 +1,35 @@
+# NetCDF C Configuration Summary
+==============================
+
+# General
+-------
+NetCDF Version:		4.4.1
+Configured On:		Tue Nov 17 13:13:38 CST 2020
+Host System:		x86_64-unknown-linux-gnu
+Build Directory: 	/public1/home/deploy/bscc-m-wrf/netcdf-c-4.4.1
+Install Prefix:         /public1/soft/netcdf/4.4.1-icc17
+
+# Compiling Options
+-----------------
+C Compiler:		/public1/soft/intel/2017/compilers_and_libraries_2017.5.239/linux/mpi/intel64/bin/mpiicc
+CFLAGS:			
+CPPFLAGS:		
+LDFLAGS:		
+AM_CFLAGS:		
+AM_CPPFLAGS:		
+AM_LDFLAGS:		
+Shared Library:		yes
+Static Library:		yes
+Extra libraries:	-lhdf5_hl -lhdf5 -ldl -lm -lz -lcurl 
+
+# Features
+--------
+NetCDF-2 API:		yes
+HDF4 Support:		no
+NetCDF-4 API:		yes
+NC-4 Parallel Support:	no
+PNetCDF Support:	no
+DAP Support:		yes
+Diskless Support:	yes
+MMap Support:		no
+JNA Support:		no

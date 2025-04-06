@@ -1,0 +1,288 @@
+# GWilson Created Tue Mar  2 09:10:03 PST 2021 from Mapping_geos2camx_CB6r4Ix.simpleSOA_wDMS.csv
+#
+# G = Gas, A = Aerosol
+# I3   NAME (A12)   MW(F7.2)
+#III==CCCCCCCCCCCC==RRRR.RR
+G  1  NO2              1.00
+G  2  O3               1.00
+G  3  CO               1.00
+G  4  N2O5             1.00
+G  5  HNO3             1.00
+G  6  PNA              1.00
+G  7  H2O2             1.00
+G  8  NTR1             1.00
+G  9  NTR2             1.00
+G 10  FORM             1.00
+G 11  FACD             1.00
+G 12  AACD             1.00
+G 13  ALD2             1.00
+G 14  ALDX             1.00
+G 15  HPLD             1.00
+G 16  PAR              1.00
+G 17  OLE              1.00
+G 18  ETHA             1.00
+G 19  MEOH             1.00
+G 20  ETOH             1.00
+G 21  MEPX             1.00
+G 22  PAN              1.00
+G 23  PANX             1.00
+G 24  OPAN             1.00
+G 25  INTR             1.00
+G 26  ISOP             1.00
+G 27  ISPX             1.00
+G 28  ISPD             1.00
+G 29  TERP             1.00
+G 30  TOL              1.00
+G 31  XYL              1.00
+G 32  SO2              1.00
+G 33  DMS              1.00
+G 34  NH3              1.00
+G 35  PRPA             1.00
+G 36  ACET             1.00
+G 37  KET              1.00
+G 38  BENZ             1.00
+G 39  NO               1.00
+G 40  HONO             1.00
+G 41  NO3              1.00
+G 42  GLYD             1.00
+G 43  GLY              1.00
+G 44  MGLY             1.00
+G 45  EPOX             1.00
+G 46  PACD             1.00
+G 47  HOI              1.00
+G 48  I2               1.00
+G 49  INO3             1.00
+G 50  I2O2             1.00
+G 51  IXOY             1.00
+G 52  CG3              1.00
+G 53  ROOH             1.00
+A 54  PSO4             1.00
+A 55  PNO3             1.00
+A 56  PNH4             1.00
+A 57  POA              1.00
+A 58  PEC              1.00
+A 59  FCRS             1.00
+A 60  CCRS             1.00
+A 61  PCL              1.00
+A 62  NA               1.00
+A 63  SOPB             1.00
+A 64  SOA3             1.00
+END
+#
+# The geoschem standard output species list
+#
+   1  NO2
+   2  O3
+   3  CO
+   4  N2O5
+   5  HNO3
+   6  HNO4
+   7  H2O2
+   8  R4N2
+   9  ETNO3
+  10  IPRNO3
+  11  MENO3
+  12  NPRNO3
+  13  R4N2
+  14  PROPNN
+  15  ETHLN
+  16  HONIT
+  17  MONITS
+  18  MONITU
+  19  ICN
+  20  IDN
+  21  INPB
+  22  INPD
+  23  ITCN
+  24  ITHN
+  25  MCRHN
+  26  MCRHNB
+  27  CH2O
+  28  HCOOH
+  29  ACTA
+  30  ALD2
+  31  RCHO
+  32  HPALD1
+  33  HPALD2
+  34  HPALD3
+  35  HPALD4
+  36  HPETHNL
+  37  PRPE
+  38  ALK4
+  39  MEK
+  40  RCHO
+  41  R4N2
+  42  PRPE
+  43  C2H6
+  44  MOH
+  45  EOH
+  46  MP
+  47  PAN
+  48  PPN
+  49  MPAN
+  50  MVKN
+  51  IHN1
+  52  IHN2
+  53  IHN3
+  54  IHN4
+  55  ISOP
+  56  RIPA
+  57  RIPB
+  58  RIPC
+  59  RIPD
+  60  IDCHP
+  61  IDHDP
+  62  IDHPE
+  63  MACR
+  64  MVK
+  65  HC5A
+  66  HMML
+  67  ICPDH
+  68  IDC
+  69  MCRDH
+  70  MCRENOL
+  71  MCRHP
+  72  MVKDH
+  73  MVKHC
+  74  MVKHCB
+  75  MTPA
+  76  LIMO
+  77  MTPO
+  78  TOLU
+  79  XYLE
+  80  SO2
+  81  DMS
+  82  NH3
+  83  C3H8
+  84  ACET
+  85  HAC
+  86  MEK
+  87  BENZ
+  88  NO
+  89  HNO2
+  90  NO3
+  91  GLYC
+  92  GLYX
+  93  MGLY
+  94  PYAC
+  95  IEPOXA
+  96  IEPOXB
+  97  IEPOXD
+  98  ICHE
+  99  MAP
+ 100  MACR1OOH
+ 101  RP
+ 102  HOI
+ 103  I2
+ 104  IBr
+ 105  ICl
+ 106  IONO2
+ 107  I2O2
+ 108  I2O3
+ 109  I2O4
+ 110  LVOC
+ 111  ATOOH
+ 112  ETP
+ 113  HMHP
+ 114  MVKHP
+ 115  MVKPC
+ 116  PIP
+ 117  PP
+ 118  PRPN
+ 119  R4P
+ 120  RA3P
+ 121  RB3P
+ 122  SO4
+ 123  MSA
+ 124  NIT
+ 125  NH4
+ 126  OCPI
+ 127  OCPO
+ 128  BCPI
+ 129  BCPO
+ 130  DST1
+ 131  DST2
+ 132  SALA
+ 133  DST2
+ 134  DST3
+ 135  DST4
+ 136  SALC
+ 137  SO4s
+ 138  NITs
+ 139  SOAS
+ 140  INDIOL
+ 141  IONITA
+ 142  MONITA
+ 143  SOAGX
+ 144  SOAIE
+ 145  LVOCOA
+END
+#
+# MAPPING TABLE
+# (i3, 1x, a12, 1x, a200) , (f6.3, 1x, a8) for each Geos specie field, '+' as separator
+#
+  1 NO2         = 1.000 NO2
+  2 O3          = 1.000 O3
+  3 CO          = 1.000 CO
+  4 N2O5        = 1.000 N2O5
+  5 HNO3        = 1.000 HNO3
+  6 PNA         = 1.000 HNO4
+  7 H2O2        = 1.000 H2O2
+  8 NTR1        = 0.500 R4N2    + 1.000 ETNO3   + 1.000 IPRNO3  + 1.000 MENO3   + 1.000 NPRNO3
+  9 NTR2        = 0.500 R4N2    + 1.000 PROPNN  + 1.000 ETHLN   + 1.000 HONIT   + 1.000 MONITS  + 1.000 MONITU  + 1.000 ICN     + 2.000 IDN     + 1.000 INPB    + 1.000 INPD    + 1.000 ITCN    + 1.000 ITHN    + 1.000 MCRHN   + 1.000 MCRHNB
+ 10 FORM        = 1.000 CH2O
+ 11 FACD        = 1.000 HCOOH
+ 12 AACD        = 1.000 ACTA
+ 13 ALD2        = 0.500 ALD2
+ 14 ALDX        = 1.000 RCHO
+ 15 HPLD        = 1.000 HPALD1  + 1.000 HPALD2  + 1.000 HPALD3  + 1.000 HPALD4  + 0.656 HPETHNL
+ 16 PAR         = 0.333 PRPE    + 1.000 ALK4    + 0.750 MEK     + 1.000 RCHO    + 3.000 R4N2
+ 17 OLE         = 0.333 PRPE
+ 18 ETHA        = 0.500 C2H6
+ 19 MEOH        = 1.000 MOH
+ 20 ETOH        = 0.500 EOH
+ 21 MEPX        = 1.000 MP
+ 22 PAN         = 1.000 PAN
+ 23 PANX        = 1.000 PPN
+ 24 OPAN        = 1.000 MPAN
+ 25 INTR        = 1.000 MVKN    + 1.000 IHN1    + 1.000 IHN2    + 1.000 IHN3    + 1.000 IHN4
+ 26 ISOP        = 0.200 ISOP
+ 27 ISPX        = 1.000 RIPA    + 1.000 RIPB    + 1.000 RIPC    + 1.000 RIPD    + 1.000 IDCHP   + 1.000 IDHDP   + 1.000 IDHPE
+ 28 ISPD        = 1.000 MACR    + 1.000 MVK     + 1.000 HC5A    + 1.000 HMML    + 1.000 ICPDH   + 1.000 IDC     + 1.000 MCRDH   + 1.000 MCRENOL + 1.000 MCRHP   + 1.000 MVKDH   + 1.000 MVKHC   + 1.000 MVKHCB
+ 29 TERP        = 1.000 MTPA    + 1.000 LIMO    + 1.000 MTPO
+ 30 TOL         = 0.143 TOLU
+ 31 XYL         = 0.125 XYLE
+ 32 SO2         = 1.000 SO2
+ 33 DMS         = 1.000 DMS
+ 34 NH3         = 1.000 NH3
+ 35 PRPA        = 0.333 C3H8
+ 36 ACET        = 0.333 ACET    + 1.000 HAC
+ 37 KET         = 0.250 MEK
+ 38 BENZ        = 0.167 BENZ
+ 39 NO          = 1.000 NO
+ 40 HONO        = 1.000 HNO2
+ 41 NO3         = 1.000 NO3
+ 42 GLYD        = 1.000 GLYC
+ 43 GLY         = 1.000 GLYX
+ 44 MGLY        = 1.000 MGLY    + 1.000 PYAC
+ 45 EPOX        = 1.000 IEPOXA  + 1.000 IEPOXB  + 1.000 IEPOXD  + 1.000 ICHE
+ 46 PACD        = 1.000 MAP     + 1.000 MACR1OOH+ 1.000 RP
+ 47 HOI         = 1.000 HOI
+ 48 I2          = 1.000 I2      + 0.500 IBr     + 0.500 ICl
+ 49 INO3        = 1.000 IONO2
+ 50 I2O2        = 1.000 I2O2
+ 51 IXOY        = 1.000 I2O3    + 1.000 I2O4
+ 52 CG3         = 0.857 LVOC
+ 53 ROOH        = 1.000 ATOOH   + 1.000 ETP     + 1.000 HMHP    + 1.000 MVKHP   + 1.000 MVKPC   + 1.000 PIP     + 1.000 PP      + 1.000 PRPN    + 1.000 R4P     + 1.000 RA3P    + 1.000 RB3P
+ 54 PSO4        = 96.00 SO4     + 96.00 MSA
+ 55 PNO3        = 62.00 NIT
+ 56 PNH4        = 18.00 NH4
+ 57 POA         = 25.20 OCPI    + 25.20 OCPO
+ 58 PEC         = 12.00 BCPI    + 12.00 BCPO
+ 59 FCRS        = 29.00 DST1    + 11.02 DST2    + 4.396 SALA
+ 60 CCRS        = 17.98 DST2    + 29.00 DST3    + 29.00 DST4    + 31.40 SALC    + 31.40 SO4s    + 31.40 NITs
+ 61 PCL         = 17.27 SALA
+ 62 NA          =  9.73 SALA
+ 63 SOPB        = 150.0 SOAS    + 102.0 INDIOL  + 14.00 IONITA  + 14.00 MONITA  + 58.00 SOAGX   + 118.0 SOAIE
+ 64 SOA3        = 154.0 LVOCOA
+END

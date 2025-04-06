@@ -1,0 +1,13 @@
+prefix=/public1/soft/netcdf/4.4.1-icc17
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+ccompiler=mpiicc
+
+Name: netcdf
+Description: NetCDF Client Library for C
+URL: http://www.unidata.ucar.edu/netcdf
+Version: 4.4.1
+Libs: -L${libdir} -lnetcdf
+Cflags: -I${includedir}
+
