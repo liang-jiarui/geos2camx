@@ -9,46 +9,20 @@
 #SBATCH --output=geos2camx_13_to_23_%j.log
 
 
-#==============================================================================
-# 配置部分
-# 需要修改 
-# 1. 处理时间；
-# 2. 基础目录；
-# 3. GEOS-Chem 输出文件目录（需要包含 SpeciesConc 和 StateMet） 
-#==============================================================================
-# 1. 处理时间范围
-setenv start_date 20130101
-setenv end_date   20231231
-
-# 2. 基础目录
-setenv root_dir /public/home/liangjiarui/ljr/research/phd/test_geos2camx/geos2camx_ljr   # 替换为你的目录，比如 setenv root_dir /home/liujiemei/XXX/geos2camx_ljr
-
-# 3. GEOSChem 输出目录
-setenv gc_data_dir  /public/home/liangjiarui/ljr/research/phd/test_geos2camx/geos2camx_ljr/gcout  # 替换为 GEOSChem 输出文件夹，需要和处理日期保持一致
+# 2. GEOSChem 输出目录
+setenv gc_data_dir  /home/camx/ljr/geoschem/20xx_prep/code/global/base/merra2_2x25_tropchem/OutputDir  # 替换为 GEOSChem 输出文件夹，需要和处理日期保持一致
 # setenv gc_data_dir  /home/camx/ljr/geos2camx_ljr/gcout
 
 # 不需要修改
-# 4. 输出目录
+# 3. 输出目录
 setenv YYYY `echo $start_date | cut -c 1-4`   # 提取年份
-setenv merge_dir ${root_dir}/output/gc_merge/$YYYY
-setenv bc_dir    ${root_dir}/output/gc_bc/$YYYY
+setenv merge_dir output/gc_merge/$YYYY
+setenv bc_dir    output/gc_bc/$YYYY
 
-# 工具目录
-setenv NETCDF       ${root_dir}/tools/netcdf_4.4.1-icc17
-setenv HDF5         ${root_dir}/tools/hdf5_1.8.13
-setenv SZIP         ${root_dir}/tools/szip_2.1.1
-setenv PATH         $NETCDF/bin:$HDF5/bin:$SZIP/bin:$PATH
-setenv LD_LIBRARY_PATH $NETCDF/lib:$HDF5/lib:$SZIP/lib:$LD_LIBRARY_PATH
-
-setenv src_dir    ${root_dir}/tools
-setenv met_data_dir ${src_dir}/20240412_orig_a/data
-setenv mapping_file ${src_dir}/geos2camx/Species_Mapping/Mapping_geos2camx_CB6r4Ix.simpleSOA_wDMS.txt
-source ${root_dir}/env.sh
+# 4. 工具目录
+setenv met_data_dir tools/20240412_orig_a/data
+setenv mapping_file tools/geos2camx/Species_Mapping/Mapping_geos2camx_CB6r4Ix.simpleSOA_wDMS.txt
 source env.sh
-#==============================================================================
-#==============================================================================
-
-
 
 
 #==============================================================================
@@ -61,7 +35,7 @@ echo "开始时间: `date`"
 mkdir -p $merge_dir $bc_dir $bc_dir/logs
 
 # 设置可执行文件路径
-set EXEC = ${src_dir}/geos2camx/src/geos2camx
+set EXEC = tools/geos2camx/src/geos2camx
 chmod +x $EXEC
 
 # 设置气象文件
@@ -130,7 +104,7 @@ while ($current_date <= $end_date)
     endif
     
     echo "步骤2: 修改合并文件的时间单位"
-    python ${src_dir}/modify_time_units.py $merge_dir $merge_dir $current_date $next_date
+    python tools/modify_time_units.py $merge_dir $merge_dir $current_date $next_date
     if ($status != 0) then
         echo "错误: 修改时间单位失败，跳过"
         set current_date = $next_date
