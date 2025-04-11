@@ -9,9 +9,19 @@
 #SBATCH --output=geos2camx_13_to_23_%j.log
 
 
+#==============================================================================
+# 配置部分
+# 需要修改 
+# 1. 处理时间；
+# 2. 基础目录；
+# 3. GEOS-Chem 输出文件目录（需要包含 SpeciesConc 和 StateMet） 
+#==============================================================================
+# 1. 处理时间范围
+setenv start_date 20130101
+setenv end_date   20231231
+
 # 2. GEOSChem 输出目录
 setenv gc_data_dir  /home/camx/ljr/geoschem/20xx_prep/code/global/base/merra2_2x25_tropchem/OutputDir  # 替换为 GEOSChem 输出文件夹，需要和处理日期保持一致
-# setenv gc_data_dir  /home/camx/ljr/geos2camx_ljr/gcout
 
 # 不需要修改
 # 3. 输出目录
