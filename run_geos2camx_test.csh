@@ -18,7 +18,7 @@
 #==============================================================================
 # 1. 处理时间范围
 setenv start_date 20230413
-setenv end_date   20230415
+setenv end_date   20230414
 
 # 2. GEOSChem 输出目录
 setenv gc_data_dir  /home/camx/ljr/geoschem/20xx_prep/code/global/base/merra2_2x25_tropchem/OutputDir  # 替换为 GEOSChem 输出文件夹，需要和处理日期保持一致
@@ -29,7 +29,8 @@ setenv merge_dir output/gc_merge/$YYYY
 setenv bc_dir    output/gc_bc/$YYYY
 
 # 4. 工具目录
-setenv met_data_dir tools/20240412_orig_a/data
+# setenv met_data_dir tools/20240412_orig_a/data
+setenv met_data_dir tools/beijing_45_9_18/wrfcamx/data
 setenv mapping_file tools/geos2camx/Species_Mapping/Mapping_geos2camx_CB6r4Ix.simpleSOA_wDMS.txt
 source env.sh
 
@@ -48,7 +49,8 @@ set EXEC = tools/geos2camx/src/geos2camx
 chmod +x $EXEC
 
 # 设置气象文件
-set metfile = ${met_data_dir}/camx.3d.d01.20240411.bin
+# set metfile = ${met_data_dir}/camx.3d.d01.20240411.bin
+set metfile = ${met_data_dir}/camx.3d.d01.20240401.bin
 set topofile = ${met_data_dir}/camx.lu.d01.bin
 
 echo "处理日期范围: $start_date 到 $end_date"
@@ -151,7 +153,7 @@ ieof
         echo "CAMx 边界文件创建成功"
         if ($current_date != $end_date) then
             echo "删除合并文件: $merged_file"
-            rm -f $merged_file
+            # rm -f $merged_file
         endif
     else
         echo "警告: 边界文件未创建，保留中间文件以调试"
@@ -163,12 +165,12 @@ end
 
 if (-e "${merge_dir}/GEOSChem.SpeciesConc.${end_date}.nc") then
     echo "删除最后一天的合并文件: ${merge_dir}/GEOSChem.SpeciesConc.${end_date}.nc"
-    rm -f ${merge_dir}/GEOSChem.SpeciesConc.${end_date}.nc
+    # rm -f ${merge_dir}/GEOSChem.SpeciesConc.${end_date}.nc
 endif
 
 if (-e "${merge_dir}/GEOSChem.SpeciesConc.${after_end_date}.nc") then
     echo "删除结束日期后一天的合并文件: ${merge_dir}/GEOSChem.SpeciesConc.${after_end_date}.nc"
-    rm -f ${merge_dir}/GEOSChem.SpeciesConc.${after_end_date}.nc
+    # rm -f ${merge_dir}/GEOSChem.SpeciesConc.${after_end_date}.nc
 endif
 
 echo "=== GEOSChem 到 CAMx 边界条件处理完成 ==="
