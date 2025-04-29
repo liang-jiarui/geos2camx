@@ -114,13 +114,13 @@ while ($current_date <= $end_date)
         echo "$next_merged_file 已存在，跳过合并步骤..."
     endif
     
-    echo "步骤2: 修改合并文件的时间单位"
-    python tools/modify_time_units.py $merge_dir $merge_dir $current_date $next_date
-    if ($status != 0) then
-        echo "错误: 修改时间单位失败，跳过"
-        set current_date = $next_date
-        continue
-    endif
+    # echo "步骤2: 修改合并文件的时间单位"
+    # python tools/modify_time_units.py $merge_dir $merge_dir $current_date $next_date
+    # if ($status != 0) then
+    #     echo "错误: 修改时间单位失败，跳过"
+    #     set current_date = $next_date
+    #     continue
+    # endif
 
     echo "步骤3: 运行 geos2camx 创建 CAMx 边界文件"
     set OUTFILEBC = ${bc_dir}/camx.bc.ljr.$current_date.bin
