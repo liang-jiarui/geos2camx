@@ -1,3 +1,4 @@
 gcout/
 output/
+*.nc4
 *.log
