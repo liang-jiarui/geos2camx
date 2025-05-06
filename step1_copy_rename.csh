@@ -14,7 +14,7 @@
 
 # 公共目录变量
 set gc_data_dir = /home/camx/ljr/geoschem/20xx_prep/code/global/base/merra2_2x25_tropchem/OutputDir
-set output_dir = ./cp_gcout
+set output_dir = /home/camx/ljr/geoschem/20xx_prep/code/global/base/merra2_2x25_tropchem/OutputDir
 
 # 任务1：将 20241227 的文件，复制重命名为 20241228-2024
 set source_date = 20241227
@@ -28,7 +28,7 @@ set target_start_date = 20250101
 set target_end_date = 20250430
 
 set source_dir = /home/camx/ljr/geoschem/20xx_prep/code/global/base/merra2_2x25_tropchem/OutputDir
-set target_dir = ./cp_gcout
+set target_dir = /home/camx/ljr/geoschem/20xx_prep/code/global/base/merra2_2x25_tropchem/OutputDir
 
 # 添加Python脚本路径
 set python_script = ./tools/modify_gcout_time.py
