@@ -18,7 +18,7 @@ set output_dir = $gc_data_dir
 
 # 任务1：将 20241227 的文件，复制重命名为 20241228-2024
 set source_date = 20241227
-set start_date = 2021228
+set start_date = 20241228
 set end_date = 20241231
 
 # 任务2：将 20240101-20240430 的文件，复制重命名为 20250101-20250430
